@@ -1,0 +1,17 @@
+#Логин: s.ant.g@gmail.com
+#Пароль: 123
+INSERT INTO users (age, name, password, surname, email) VALUES (22, 'Tony',
+'$2a$12$AcWQGFGEyc/m2PwLpTgIx.JOxdL7/EdHjUVCa1Smq3JvLChkULUyS', 'Gemar', 's.ant.g@gmail.com');
+
+#Логин: ajgame@mail.ru
+#Пароль: 321
+INSERT INTO users (age, name, password, surname, email) VALUES (32, 'Adam',
+'$2a$12$ORxLL2Im0TxnHSc07tyof.8QFJs63tBMGFDkaEJDd2yd8zSvUsQkG', 'Gemar', 'ajgame@mail.ru');
+
+INSERT INTO roles (role_id, name) VALUES (1, 'ROLE_USER');
+INSERT INTO roles (role_id, name) VALUES (2, 'ROLE_ADMIN');
+
+#Админ:
+INSERT INTO users_roles (user_id, role_id) VALUES (1, 2);
+#Пользователь:
+#INSERT INTO users_roles (user_id, role_id) VALUES (2, 1);
